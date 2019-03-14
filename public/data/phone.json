@@ -1,0 +1,67 @@
+[
+    {
+        "id":"10035",
+        "name":"魅族 X8",
+        "title":"骁龙710  旗舰双摄",
+        "price":"1598",
+        "img":"https://openfile.meizu.com/group1/M00/06/A9/Cgbj0FusSK2AQZgiAAlFKHoO-co889.png",
+        "lable":"直降"
+    },
+    {
+        "id":"9169",
+        "name":"魅族 16th Plus",
+        "title":"骁龙845  屏幕下指纹 ",
+        "price":"3198",
+        "img":"https://openfile.meizu.com/group1/M00/05/F0/Cgbj0VtqgjeAV_ChAAfVjwwpNdw016.png",
+        "lable":"限时券"
+    },
+    {
+        "id":"9161",
+        "name":"魅族 16th",
+        "title":"骁龙845 屏幕下指纹",
+        "price":"2698",
+        "img":"https://openfile.meizu.com/group1/M00/05/E2/Cgbj0FtqgnmAFgJPAAhgnScaoFg724.png",
+        "lable":"限时券"
+    },
+    {
+        "id":"9851",
+        "name":"魅族 16 X",
+        "title":"骁龙710 轻奢旗舰",
+        "price":"2098",
+        "img":"https://openfile.meizu.com/group1/M00/06/CC/Cgbj0VvINL-AGM20AAw4GirVtYA698.png",
+        "lable":"领券"
+    },
+    {
+        "id":"9854",
+        "name":"魅族 V8 高配版",
+        "title":"双摄全面屏 游戏长续航",
+        "price":"1098",
+        "img":"https://openfile.meizu.com/group1/M00/06/AC/Cgbj0VujaMOAFzUFAARRWnHvM84529.png",
+        "lable":"领券"
+    },
+    {
+        "id":"10333",
+        "name":"魅族 Note8",
+        "title":"骁龙632 疾速双摄",
+        "price":"999",
+        "img":"https://openfile.meizu.com/group1/M00/06/D4/Cgbj0VvQPnuAAwPPAAMv8zzt2DE910.png",
+        "lable":"领券"
+    },
+    {
+        "id":"7155",
+        "name":"魅族 15 Plus",
+        "title":"限量领券更优惠 | 三星8895处理器 2000万暗光双摄",
+        "price":"2999",
+        "img":"https://openfile.meizu.com/group1/M00/04/1C/Cgbj0VrcbrCANJBMAAxI8Fi80MA520.png",
+        "lable":"领券"
+    },
+    {
+        "id":"6815",
+        "name":"魅蓝 E3",
+        "title":"骁龙636 全系6G大运存",
+        "price":"1799",
+        "img":"https://openfile.meizu.com/group1/M00/03/BC/Cgbj0Vq9-oeARs_XAALvUdl5qpo302.png",
+        "theme":"0","priceGetStart":false,
+        "lable":""
+    }
+]

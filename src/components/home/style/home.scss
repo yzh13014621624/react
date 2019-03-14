@@ -1,0 +1,33 @@
+@import '@/qunar/reset.scss';
+
+.home_search{
+  @include rect(100%, 0.45rem);
+  font-size: 16px;
+  color: #666;
+  // text-align: center;
+  line-height: 0.45rem;
+  background: #fff;
+  // text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0);
+  .h_tit {
+    color: aqua;
+    @include rect(100%, 0.4rem);
+    @include flexbox();
+    li {
+      padding: 0px 33% 0px 10px;
+    }
+    .h-search {
+      color: #666;
+      a {
+          color:#666;                
+      }
+    }
+    .h_li {
+      color:#666;
+      padding: 0;
+      span {
+        padding: 0px 4px;
+      }
+    }
+  }
+}

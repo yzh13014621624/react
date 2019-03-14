@@ -1,0 +1,26 @@
+@import '@/qunar/reset.scss';
+.content3 {
+    background-image: url(http://img4.imgtn.bdimg.com/it/u=2783109705,2747372213&fm=15&gp=0.jpg);
+    @include rect(100%, 100%);
+    .top {
+        color: aqua;
+        margin-top:15%;
+        font-size: 0.2rem;
+        padding: 0 44.6%;
+        margin-bottom: 10%;
+    }
+    .input1 {
+        width: 80%;
+        margin:5% 10%;
+        border: 1px solid orange;
+        border-radius: 25%;    
+    }
+    .btn1 {
+        margin: 0 40%;
+        font-size: 20px;
+        color:aqua;
+    }
+    .getCode {
+        @include rect(100%, auto);
+    }
+}

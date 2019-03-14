@@ -1,0 +1,39 @@
+@import '@/qunar/reset.scss';
+.content4 {
+    background-image: url(http://img4.imgtn.bdimg.com/it/u=2783109705,2747372213&fm=15&gp=0.jpg);
+    @include rect(100%, 100%);
+    .ccc {
+        @include rect(100%, auto);
+        margin-bottom: 20%;
+    }
+    .input1 {
+        width: 80%;
+        margin:20% 10% 20%;
+        border: 1px solid orange;
+        border-radius: 25%;    
+    }
+    // .n1 {
+    //     height: 100%;
+    //     padding: 0 15px;
+    //     margin-right: -15px;
+    //     display: flex;
+    //     align-items: center;
+    // }
+    .btn2 {
+        margin:10% 0%;
+        font-size: 20px;
+    }
+    .btn1 {
+        margin: 10% 44.5%;
+        font-size: 20px;
+        color: aqua;
+    }
+    .ouser {
+        background-image: url(https://zos.alipayobjects.com/rmsportal/DfkJHaJGgMghpXdqNaKF.png); background-size: cover; 
+        @include rect(0.2rem,0.2rem);
+    }
+    .mima {
+        background-image: url(https://zos.alipayobjects.com/rmsportal/DfkJHaJGgMghpXdqNaKF.png); background-size: cover;
+        @include rect(0.2rem,0.2rem);
+    }
+}

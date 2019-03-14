@@ -1,0 +1,97 @@
+@import '@/qunar/reset.scss';
+
+div._box {
+  @include rect(100%, 100%);
+  header.top {
+    @include flex();
+    @include flexbox();
+    @include rect(100%, .44rem);
+    @include justify-content(space-between);
+    padding-left: .1rem;
+    padding-right: .1rem;
+    @include background-color(#fff);
+    @include align-items();
+    border-bottom:.01rem solid #ccc;
+    input {
+      border: none;
+      border-radius: .2rem;
+      @include padding-left(.2rem);
+      @include background-color(#eee);
+      @include rect(70%, .27rem);
+      // @include text-indent(.35rem);
+    }
+  }
+}
+
+div.hot {
+  @include rect(100%, 1.6rem);
+  @include background-color(#fff);
+  p {
+    @include padding(.2rem 0 0 .1rem);
+    @include color(#333);
+    @include font-size(.16rem);
+  }
+  ul {
+    @include flex();
+    @include flexbox();
+    @include margin(.1rem .1rem);
+    @include flex-wrap(wrap);
+    @include rect(auto, auto);
+    @include justify-content(space-between);
+    li {
+      @include rect(auto, .3rem);
+      border: .01rem solid #ccc;
+      border-radius: .3rem;
+      padding-left: .15rem;
+      padding-right: .15rem;
+      @include line-height(.3rem);
+      margin: .1rem;
+    }
+  }
+}
+.searchdata {
+  @include flexbox();
+  @include flex-direction(column);
+  @include rect(100%,auto);
+  li {
+    @include rect(100%,auto);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include background-color(#fff);
+    @include margin-bottom(.01rem);
+    @include margin-top(.01rem);
+    img {
+      @include rect(auto,1rem);
+    }
+    .r {
+      @include rect(100%,auto);
+      p {
+        @include rect(100%,auto);
+        @include padding-right(.2rem);
+      }
+      .into {
+        @include font-size(0.14rem);
+      }
+      .money {
+        span {
+          @include color(red);
+        }
+      }
+    }
+  }
+}
+
+div.history {
+  @include rect(100%, 100%);
+  @include background-color(#fff);
+  margin-top: .1rem;
+  h3 {
+    @include rect(auto, .6rem);
+    border-bottom: .01rem solid #eee;
+    padding: 0 .2rem;
+    @include font-size(.16rem);
+    @include color(#333);
+    @include line-height(.6rem);
+  }
+}

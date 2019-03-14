@@ -1,0 +1,79 @@
+@import '@/qunar/reset.scss';
+
+.content {
+  .cartdata {
+    @include rect(100%,100%);
+    @include margin-top(.1rem);
+    li {
+      @include rect(100%,auto);
+      @include background-color(#fff);
+      // @include border(0 0 .01rem 0, #eee solid);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include margin-bottom(.01rem);
+      .input {
+        zoom: 120%;
+        @include margin-left(.2rem);
+      }
+      img {
+        @include rect(auto,1rem);
+        @include margin-left(.1rem);
+      }
+      .right {
+        @include rect(auto,auto);
+        @include flexbox();
+        @include flex();
+        @include flex-direction(column);
+        span {
+          @include margin-left(2rem);
+        }
+        i {
+          @include color(red);
+        }
+        .carttitke {
+          @include color(#bbb);
+        }
+      }
+    }
+  }
+}
+
+.cartfoot {
+  @include flexbox();
+  @include rect(100%,.5rem);
+  @include background-color(#fff);
+  li {
+    @include flexbox();
+    @include justify-content(flex-end);
+    @include align-items();
+    i {
+      @include display(inline-block);
+      @include rect(100%,.5rem);
+      @include background-color(red);
+    }
+    b {
+      @include color(red);
+    }
+  }
+  li:nth-child(1) {
+    @include rect(20%,auto);
+    input {
+      zoom: 150%;
+    }
+  }
+  li:nth-child(2) {
+    @include rect(50%,auto);
+    @include text-align(right);
+  }
+  li:nth-child(3) {
+    @include color(#fff);
+    @include text-align(center);
+    @include margin-left(.1rem);
+    @include font-size(.18rem);
+    @include rect(30%,.5rem);
+    i {
+      @include padding-top(.12rem);
+    }
+  }
+}
