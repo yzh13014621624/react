@@ -178,7 +178,7 @@ class Com extends Component {
               return (
                 <li key={index}>
                 {/* <input type="checkbox"  onClick={this.aaaaaaaaaa.bind(this,items)} className='input' /> */}
-                  <input type="checkbox" checked={this.state.xuanze} onClick={this.total.bind(this,items.id)} className='input' />
+                  <input type="checkbox" checked={this.state.xuanze} onChange={this.total.bind(this,items.id)} className='input' />
                   <img src={items.images} alt="items.images"/>
                   <div className='right'>
                     <p className='cartname'>{items.name}</p>
@@ -194,7 +194,7 @@ class Com extends Component {
         </div>
         <div className='foot'>
         <ul className='cartfoot'>
-          <li><input type='checkbox' id='checkbox' onClick={this.quanxuan.bind(this)} checked={this.state.allcheckboxbutton}/><label for='checkbox'>全选</label></li>
+          <li><input type='checkbox' onChange={this.quanxuan.bind(this)} checked={this.state.allcheckboxbutton}/>全选</li>
           <li>总计：<b>￥{this.state.totalprice}</b></li>
           <li onClick={this.jiesuan.bind(this,this.state.dataArr)}><i>结算</i></li>
         </ul>

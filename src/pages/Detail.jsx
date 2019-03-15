@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import api from '../api/detail';
 import '@/api/kind/products.scss'
 import { List, Modal, Button, Toast, Picker } from 'antd-mobile';
+import { hidden } from 'ansi-colors';
 
 const Item = List.Item;
 // const areaArray = [
@@ -179,7 +180,7 @@ gocart () {
   render () {
     // console.log(this.state.message)
     return (
-      <div className = 'box'>
+      <div className='box'>
         <div className='content'>
           <div className='detailimg'>
             <img src= {this.state.img} alt="1"/>
@@ -235,30 +236,30 @@ gocart () {
               </List.Item>
             </List>
           </Modal>
-            </div>
-          </div>
-        <div className='foot'>
-        <ul className='detailfoot'>
-          <li>
-            <span className='iconfont icon-kefu'></span>
-            <p>客服</p>
-          </li>
-          <li>
-            <span className='iconfont icon-shoucang'></span>
-            <p onClick={this.shoucang.bind(this)}>收藏</p>
-          </li>
-          <li onClick={this.gocart.bind(this)}>
-            <span className='iconfont icon-icon4'></span>
-            <p>购物车</p>
-          </li>
-          <li>
-            <i className='joinCart' onClick={this.joinCart.bind(this)}>加入购物车</i>
-          </li>
-          <li>
-            <i className='buy' onClick={this.joinbuy.bind(this)}>立即购买</i>
-          </li>
-        </ul>
+        </div>
       </div>
+        <div className='footer'>
+          <ul className='detailfoot'>
+            <li>
+              <span className='iconfont icon-kefu'></span>
+              <p>客服</p>
+            </li>
+            <li>
+              <span className='iconfont icon-shoucang'></span>
+              <p onClick={this.shoucang.bind(this)}>收藏</p>
+            </li>
+            <li onClick={this.gocart.bind(this)}>
+              <span className='iconfont icon-icon4'></span>
+              <p>购物车</p>
+            </li>
+            <li>
+              <i className='joinCart' onClick={this.joinCart.bind(this)}>加入购物车</i>
+            </li>
+            <li>
+              <i className='buy' onClick={this.joinbuy.bind(this)}>立即购买</i>
+            </li>
+          </ul>
+        </div>  
       </div>
     )
   }

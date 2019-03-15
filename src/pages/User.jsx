@@ -109,7 +109,6 @@ class Com extends Component {
                 <div className="myapp">
                 <div className="topr">
                   <span>我的订单</span>
-                  <NavLink to='' onClick={this.Islogin.bind(this,'dingdan')} className="dingdan">查看全部订单</NavLink>
                 </div>
                 <div className="icon">
                   <span><i className="iconfont icon-daifukuan"></i><p>待付款</p></span>

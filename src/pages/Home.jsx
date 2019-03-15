@@ -23,15 +23,15 @@ class Com extends Component {
     return (
       <div className='box'>
       <div className = "home_search">
-          <ul className = "h_tit">
-            <li className = "h_search">
+          <ul>
+            <li>
               <NavLink to = "/Search" ><i className = "iconfont icon-huaban"></i></NavLink>
             </li>
             <li>MEIZU</li>
-            <li className = "h_li">
+            <li>
             <NavLink to = "/cartapp/cart" ><i className = "iconfont icon-gouwuche"></i></NavLink>
             </li>
-            <li className = "h_li2"><NavLink to = "/cartapp/cart1" ><i className = "iconfont icon-gengduo"></i></NavLink></li>
+            <li><NavLink to = "/cartapp/cart1" ><i className = "iconfont icon-gengduo"></i></NavLink></li>
           </ul>
         </div>
       <div className = 'content'>

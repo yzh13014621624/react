@@ -2,32 +2,31 @@
 
 .home_search{
   @include rect(100%, 0.45rem);
-  font-size: 16px;
-  color: #666;
+  @include font-size(.16rem);
+  @include color(#000);
   // text-align: center;
   line-height: 0.45rem;
   background: #fff;
   // text-align: center;
   border: 1px solid rgba(255, 255, 255, 0);
-  .h_tit {
-    color: aqua;
+  ul {
     @include rect(100%, 0.4rem);
     @include flexbox();
-    li {
-      padding: 0px 33% 0px 10px;
+    li:nth-child(1) {
+      @include rect(15%,auto);
+      @include text-align(center);
     }
-    .h-search {
-      color: #666;
-      a {
-          color:#666;                
-      }
+    li:nth-child(2) {
+      @include rect(80%,auto);
+      @include text-align(center);
     }
-    .h_li {
-      color:#666;
-      padding: 0;
-      span {
-        padding: 0px 4px;
-      }
+    li:nth-child(3) {
+      @include rect(7.5%,auto);
+      @include text-align(left);
+    }
+    li:nth-child(4) {
+      @include rect(7.5%,auto);
+      @include text-align(left);
     }
   }
 }

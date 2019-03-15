@@ -38,7 +38,7 @@
 
 }
 .myapp {
-    width: 5.4rem;
+    width: 100%;
     height: 1.0rem;
     background-color: #fff;
 }
@@ -52,20 +52,28 @@
 .topr span {
     margin-left: 0.15rem;
 }
-.myapp .dingdan{
-    color: #999;
-    padding: 0 1.88rem;
-}
 .icon{
     border-top:1px solid #eee;
     display: flex;
     flex-wrap: nowrap;
     background-color: #fff;
-    width: 100%;
+    width: auto;
     height: 0.8rem;
-    margin: 0.1rem 0;
-    padding: 0.1rem 0;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.2rem;
 }
+.icon span {
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.icon span p{
+    width: 100%;
+}
+
 .icon .icon-daifukuan{
     font-size: 0.24rem;
     padding: 0rem 0.35rem 0.3rem;

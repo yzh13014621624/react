@@ -225,7 +225,7 @@ goHome () {
         </div>
         <div className='foot'>
         <ul className='cartfoot'>
-          <li><input type='checkbox' id='checkbox' onClick={this.quanxuan.bind(this,this.state.dataArr)} checked={this.state.allcheckboxbutton}/><label for='checkbox'>全选</label></li>
+          <li><input type='checkbox' id='checkbox' onChange={this.quanxuan.bind(this,this.state.dataArr)} checked={this.state.allcheckboxbutton}/><label for='checkbox'>全选</label></li>
           <li></li>
           <li onClick={this.del.bind(this, this.state.dataArr)}><i>删除</i></li>
         </ul>

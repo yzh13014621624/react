@@ -22,7 +22,7 @@ class Com extends Component {
   };
  render() {
   return (
-    <div className = "main">
+    <div className = "box">
       <header className = "header">
       <NavBar
       mode="light"

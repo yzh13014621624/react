@@ -103,7 +103,7 @@ godetail (id) {
           <li><img className='picture' src=" https://fms.res.meizu.com/dms/2018/12/26/61250d46-6eb9-4846-99ce-6d65778a84a2.jpg " lazy-src=" https://fms.res.meizu.com/dms/2018/12/26/61250d46-6eb9-4846-99ce-6d65778a84a2.jpg " alt="4" /></li>
         </ul>
         <div className = 'connectUs'>
-          <a className = 'tel' href = 'javascript::'>
+          <a className = 'tel' href = '#'>
             <span className = "iconfont">&#xe7b5;</span>
             400-788-3333
           </a>

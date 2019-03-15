@@ -80,9 +80,10 @@ h1 {
     @include flexbox();
     @include align-items(center);
     @include justify-content(center);
-    @include rect(1.875rem,2.5rem);
+    @include rect(50%,2.5rem);
     @include flex-direction(column);
     @include background-color(#fff);
+
     .title {
       @include margin-top(.1rem);
     }
@@ -111,7 +112,7 @@ h1 {
     @include flexbox();
     @include align-items(center);
     @include justify-content(center);
-    @include rect(1.875rem,auto);
+    @include rect(50%,auto);
     @include flex-direction(column);
     @include background-color(#fff);
     @include margin-bottom(.1rem);
@@ -156,103 +157,110 @@ h1 {
     }
   }
 }
-//商品详情底部
-.detailfoot {
-  @include rect(100%,.4rem);
-  @include flexbox();
-  @include justify-content(space-between);
-  @include background-color(#fff);
-  li:nth-child(4) {
-    @include rect(25%,auto);
-  }
-  li:nth-child(5) {
-    @include rect(25%,auto);
-  }
-  li {
-    @include rect(auto,100%);
-    @include flexbox();
-    @include flex-direction(column);
-    @include align-items();
-    @include flex();
-    i {
-      @include display(block);
-      @include rect(1rem,.4rem);
-      @include color(#fff);
-      @include text-align(center);
-      @include padding-top(.1rem);
-    }
-    p {
-      @include margin-top(-.05rem);
-    }
-    .joinCart {
-      @include background-color(#f0415f);
-    }
-    .buy {
-      @include background-color(#00c3f5);
-    }
-    span {
-      @include display(block);
-    }
-  }
-}
 
 //商品内容布局
-.detailimg {
-  @include rect(100%,auto);
-  @include overflow();
-  .my-list {
-    .am-list-body {
-      .am-list-item-middle {
-        .am-list-ripple {
-          @include color(#666);
+.box {
+  .content {
+    .detailimg {
+      @include rect(100%,80%);
+      .my-list {
+        .am-list-body {
+          .am-list-item-middle {
+            .am-list-ripple {
+              @include color(#666);
+              @include font-size(.12rem);
+            }
+          }
+        }
+      }
+      img {
+        @include rect(100%, 2.8rem);
+        // margin-left: 26%
+      }
+      .message {
+        @include padding(.1rem);
+        @include background-color(#fff);
+        h2 {
+          @include font-size(.24rem);
+        }
+        span {
+          @include font-size(.16rem);
+          @include color(red);
+        }
+        .price {
           @include font-size(.12rem);
+          @include color(red);
+        }
+        .title {
+          @include font-size(.12rem);
+          @include color(red);
+        }
+        .detail-icon {
+          @include rect(100%,auto);
+          @include flexbox();
+          @include background-color(#fff);
+          @include margin-top(.1rem);
+          li {
+            @include flex();
+            @include flexbox();
+            @include justify-content();
+            @include align-items();
+          }
+          // @include justify-content(space-around);
+        }
+      }
+      .iconto {
+        @include flexbox();
+        @include background-color(#fff);
+        @include margin-top(.06rem);
+        @include justify-content(space-around);
+        @include font-size(.12rem);
+      }
+    }
+  }
+  //商品详情底部
+  .footer {
+    @include rect(100,.4rem);
+    .detailfoot {
+      @include rect(100%,auto);
+      @include flexbox();
+      @include justify-content(space-between);
+      @include background-color(#fff);
+      li:nth-child(4) {
+        @include rect(25%,auto);
+      }
+      li:nth-child(5) {
+        @include rect(25%,auto);
+      }
+      li {
+        @include rect(auto,100%);
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items();
+        @include flex();
+        i {
+          @include display(block);
+          @include rect(1rem,.4rem);
+          @include color(#fff);
+          @include text-align(center);
+          @include padding-top(.1rem);
+        }
+        p {
+          @include margin-top(-.05rem);
+        }
+        .joinCart {
+          @include background-color(#f0415f);
+        }
+        .buy {
+          @include background-color(#00c3f5);
+        }
+        span {
+          @include display(block);
         }
       }
     }
   }
-  img {
-    @include rect(100%, 2.8rem);
-    // margin-left: 26%
-  }
-  .message {
-    @include padding(.1rem);
-    @include background-color(#fff);
-    h2 {
-      @include font-size(.24rem);
-    }
-    span {
-      @include font-size(.16rem);
-      @include color(red);
-    }
-    .price {
-      @include font-size(.12rem);
-      @include color(red);
-    }
-    .title {
-      @include font-size(.12rem);
-      @include color(red);
-    }
-    .detail-icon {
-      @include rect(100%,auto);
-      @include flexbox();
-      @include background-color(#fff);
-      @include margin-top(.1rem);
-      li {
-        @include flex();
-        @include flexbox();
-        @include justify-content();
-        @include align-items();
-      }
-      // @include justify-content(space-around);
-    }
-  }
-  .iconto {
-    @include flexbox();
-    @include background-color(#fff);
-    @include margin-top(.06rem);
-    @include justify-content(space-around);
-    @include font-size(.12rem);
-  }
+
 }
 
 div.connectUs {

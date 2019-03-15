@@ -7,9 +7,6 @@ import User from '@/pages/User'
 class App extends Component {
   constructor (props) {
     super(props);
-    this.state = {
-      color: '#000'
-    }
   }
   gocart (event) {
     event.preventDefault();
@@ -20,6 +17,15 @@ class App extends Component {
     } else {
       this.props.history.push('/cartapp/cart')
     }
+    // this.setState = {
+    //   color: 'red'
+    // }
+  }
+
+  changecolor () {
+    // this.setState = {
+    //   color: 'red'
+    // }
   }
 
   render () {
@@ -38,8 +44,8 @@ class App extends Component {
           <ul>
             <NavLink to = "/home" replace><i className = 'iconfont icon-home'></i><span>首页</span></NavLink>
             <NavLink to = "/kind" replace><i className = 'iconfont icon-hebingxingzhuang'></i><span>分类</span></NavLink>
-            <NavLink to='/cart' replace onClick={this.gocart.bind(this)} ><i className = 'iconfont icon-gouwuche'></i><span>购物车</span></NavLink>
-            <NavLink to = "/user" replace ><i className = 'iconfont icon-yonghu'></i><span>我的</span></NavLink>
+            <NavLink to='/cart' replace onClick={this.gocart.bind(this)}><i className = 'iconfont icon-gouwuche'></i><span>购物车</span></NavLink>
+            <NavLink to = "/user" replace><i className = 'iconfont icon-yonghu'></i><span>我的</span></NavLink>
           </ul>
         </footer>
       </div>

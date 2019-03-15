@@ -5,7 +5,7 @@ const api = {
   requesttelphone () {
     return new Promise((resolve, reject) => {
       axios.get(baseUrl + '/react/telphone').then(data => {
-        console.log(data.data.data)
+        // console.log(data.data.data)
         resolve(data.data.data)
       }).catch(error => {
         reject(error)
@@ -15,7 +15,7 @@ const api = {
   requestparets () {
     return new Promise((resolve, reject) => {
       axios.get(baseUrl + '/react/parets').then(data => {
-        console.log(data.data.data)
+        // console.log(data.data.data)
         resolve(data.data.data)
       }).catch(error => {
         reject(error)
@@ -25,7 +25,7 @@ const api = {
   requestsound () {
     return new Promise((resolve, reject) => {
       axios.get(baseUrl + '/react/sound').then(data => {
-        console.log(data.data.data)
+        // console.log(data.data.data)
         resolve(data.data.data)
       }).catch(error => {
         reject(error)
@@ -35,7 +35,7 @@ const api = {
   requestlive () {
     return new Promise((resolve, reject) => {
       axios.get(baseUrl + '/react/live').then(data => {
-        console.log(data.data.data)
+        // console.log(data.data.data)
         resolve(data.data.data)
       }).catch(error => {
         reject(error)
